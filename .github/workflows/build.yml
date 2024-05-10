@@ -14,10 +14,10 @@ jobs:
 
     - name: Appknox Scan
       id: appknox_scan
-      uses: axial-compound/appknox-test@1.0.0
+      uses: axial-compound/appknox-github-action@1.0.0
       env:
         ACTIONS_RUNNER_DEBUG: true
       with:
         appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
-        file_path: apk-binary-code/sample-app.apk
+        file_path: sample/app.apk
         risk_threshold: LOW
